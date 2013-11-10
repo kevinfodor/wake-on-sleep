@@ -1,0 +1,32 @@
+[Eagle]
+Version="06 05 00"
+Platform="Windows"
+Serial="702BC6A4C6-LSR-WLM-1SS"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="C:/projects/common/EagleCad/lbr/Arduino_Eth08d_MU.lbr"
+UsedLibrary="C:/projects/common/EagleCad/lbr/SparkFun.lbr"
+UsedLibrary="C:/projects/common/EagleCad/lbr/Wuerth_Elektronik_eiSos_V6.lbr"
+UsedLibrary="C:/projects/common/EagleCad/lbr/adafruit.lbr"
+UsedLibrary="C:/projects/common/EagleCad/lbr/con-amphenol-rj45-ld.lbr"
+UsedLibrary="C:/projects/common/EagleCad/lbr/con-rj.lbr"
+UsedLibrary="C:/projects/common/EagleCad/lbr/dp_devices.lbr"
+UsedLibrary="C:/projects/common/EagleCad/lbr/kevin.lbr"
+UsedLibrary="C:/projects/common/EagleCad/lbr/m-pad-2.1.lbr"
+UsedLibrary="C:/projects/common/EagleCad/lbr/pulse-eng.lbr"
+UsedLibrary="C:/projects/common/EagleCad/lbr/supressor.lbr"
+UsedLibrary="C:/projects/common/EagleCad/lbr/switch-tact.lbr"
+UsedLibrary="C:/projects/common/EagleCad/lbr/v-reg-3.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="492 231 1091 630"
+State=2
+Number=0
+
+[Desktop]
+Screen="3040 900"
+Window="Win_1"

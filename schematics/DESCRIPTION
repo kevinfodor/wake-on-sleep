@@ -1,0 +1,18 @@
+Wake-on-Sleep - Rev. A.0
+
+A simple toy which is (sleeping) while being played with, but if it becomes inactive for some time will wake and sound an attention getting tone to say "play with me".
+
+Revision A.1
+
+* Reverse title/name silkscreen
+* LED2 needs to be reversed.
+* Buzzer needs polarity marking.
+* C2 and C3 are incorrectly placed (swappped) on PCB.
+* Buzzer part # is 254-EMB140-R0 (ME)
+* JP2 part number is incorrect for footprint. Should be SM04B-SRSS-TB(LF)(SN)(P) CONN HEADER SH 4POS SIDE 1MM TIN
+* Need test points for Vcc, GND, VBatt, etc.
+* Extend ADXL362 footprint (~1.5)
+
+Revision A.0
+
+* Initial version

@@ -5113,6 +5113,31 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="-1.85" y1="1.25" x2="-1.85" y2="1.75" width="0.127" layer="21"/>
 <wire x1="-1.85" y1="1.75" x2="-1.4" y2="1.75" width="0.127" layer="21"/>
 <text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<rectangle x1="-0.635" y1="-0.635" x2="0.635" y2="0.635" layer="41"/>
+</package>
+<package name="BATTCON_20MM_SMD_EJECT">
+<description>http://www.batteryholders.com/part.php?pn=BA2032SM&amp;original=CR2032&amp;override=CR2032</description>
+<text x="-14" y="-9" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-14" y="-10" size="0.6096" layer="27">&gt;VALUE</text>
+<wire x1="-14" y1="6" x2="-12" y2="8" width="0.127" layer="21" curve="-90"/>
+<wire x1="-12" y1="8" x2="12" y2="8" width="0.127" layer="21"/>
+<wire x1="12" y1="8" x2="14" y2="6" width="0.127" layer="21" curve="-90"/>
+<wire x1="14" y1="6" x2="14" y2="-6" width="0.127" layer="21"/>
+<wire x1="14" y1="-6" x2="12" y2="-8" width="0.127" layer="21" curve="-90"/>
+<wire x1="12" y1="-8" x2="-12" y2="-8" width="0.127" layer="21"/>
+<wire x1="-12" y1="-8" x2="-14" y2="-6" width="0.127" layer="21" curve="-90"/>
+<wire x1="-14" y1="-6" x2="-14" y2="6" width="0.127" layer="21"/>
+<smd name="VCC@1" x="-13.65" y="0" dx="5" dy="6" layer="1"/>
+<smd name="VCC@2" x="13.65" y="0" dx="5" dy="6" layer="1"/>
+<text x="14.6" y="3.1" size="1.27" layer="21">-</text>
+<text x="-15.3" y="4.6" size="1.27" layer="21" rot="R270">+</text>
+<wire x1="-5.5" y1="3.5" x2="5.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="5.5" y1="3.5" x2="5.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="5.5" y1="-3.5" x2="-5.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="-3.5" x2="-5.5" y2="3.5" width="0.127" layer="21"/>
+<text x="0" y="0" size="1.27" layer="21" align="center">ADHESIVE
+AREA</text>
+<circle x="0" y="0" radius="10" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -9281,6 +9306,15 @@ Various common sizes : AA, AAA, 20mm coin cell and 12mm coin cell.&lt;br&gt;
 <technology name=""/>
 </technologies>
 </device>
+<device name="20MM_SMD" package="BATTCON_20MM_SMD_EJECT">
+<connects>
+<connect gate="G$1" pin="+" pad="VCC@1"/>
+<connect gate="G$1" pin="-" pad="VCC@2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="LED" prefix="LED" uservalue="yes">
@@ -11584,8 +11618,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="SG1" library="kevin" deviceset="BUZZER" device="PTH">
 <attribute name="PARTNO" value="254-EMB140-R0"/>
 </part>
-<part name="BAT1" library="kevin" deviceset="BATTERY" device="20SMD" value="CR2032-20MM">
-<attribute name="PARTNO" value="S8211-46R"/>
+<part name="BAT1" library="kevin" deviceset="BATTERY" device="20MM_SMD" value="CR2032-20MM">
+<attribute name="PARTNO" value="BA2032SM"/>
 </part>
 <part name="LED3" library="kevin" deviceset="LED" device="CHIPLED_0603" value="GREEN">
 <attribute name="PARTNO" value="LTST-C191KGKT"/>
@@ -12146,9 +12180,9 @@ Nitzan Gadish, Analog Devices</text>
 <label x="127" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="30.48" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
-<label x="73.66" y="30.48" size="1.778" layer="95" rot="R180"/>
+<wire x1="78.74" y1="27.94" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
+<label x="73.66" y="27.94" size="1.778" layer="95" rot="R180"/>
+<pinref part="JP2" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="!AWAKE.OUT" class="0">
@@ -12158,9 +12192,9 @@ Nitzan Gadish, Analog Devices</text>
 <label x="127" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="3"/>
-<wire x1="78.74" y1="27.94" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
-<label x="73.66" y="27.94" size="1.778" layer="95" rot="R180"/>
+<wire x1="78.74" y1="30.48" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
+<label x="73.66" y="30.48" size="1.778" layer="95" rot="R180"/>
+<pinref part="JP2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$6" class="0">

@@ -12,6 +12,7 @@ Revision A.1
 * JP2 part number is incorrect for footprint. Should be SM04B-SRSS-TB(LF)(SN)(P) CONN HEADER SH 4POS SIDE 1MM TIN
 * Need test points for Vcc, GND, VBatt, etc.
 * Extend ADXL362 footprint (~1.5)
+* Replace battery holder with SMD, eject type battery holder
 
 Revision A.0
 

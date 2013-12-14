@@ -56,3 +56,21 @@
 
 /code/.settings/org.eclipse.cdt.codan.core.prefs
 /code/.settings/org.eclipse.cdt.managedbuilder.core.prefs
+
+/schematics/*.b#1
+/schematics/wake_on_sleep.b#2
+/schematics/wake_on_sleep.b#3
+/schematics/wake_on_sleep.b#4
+/schematics/wake_on_sleep.b#5
+/schematics/wake_on_sleep.b#6
+/schematics/wake_on_sleep.b#7
+/schematics/wake_on_sleep.b#8
+/schematics/wake_on_sleep.b#9
+/schematics/wake_on_sleep.dri
+/schematics/wake_on_sleep.gpi
+/schematics/wake_on_sleep.s#1
+/schematics/wake_on_sleep.s#2
+/schematics/wake_on_sleep.s#3
+/schematics/wake_on_sleep.s#4
+/schematics/wake_on_sleep.s#5
+/schematics/wake_on_sleep.s#6
